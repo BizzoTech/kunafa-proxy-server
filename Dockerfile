@@ -1,4 +1,5 @@
 FROM openresty/openresty:centos
+RUN yum -y install perl-CPAN; yum clean all
 
 RUN curl -L https://cpanmin.us | perl - App::cpanminus
 
